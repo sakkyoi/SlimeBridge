@@ -27,7 +27,7 @@ def check_and_download_sdk():
         # extract the SDK
         with ZipFile(sdk) as zf:
             for file in [f for f in zf.filelist if f.filename.startswith("rebocap_ws_sdk/")]:
-                zf.extract(file, "rebocap/rebocap_ws_sdk")
+                zf.extract(file, "rebocap")
 
         print("SDK downloaded successfully.")
 
